@@ -1,0 +1,264 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2865
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red180\green36\blue25;\red159\green160\blue28;
+}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c76411\c21697\c12527;\cssrgb\c68469\c68012\c14211;
+}
+\margl1440\margr1440\vieww21500\viewh25400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Tue Sep 30 13:02:00 on ttys002\
+(base) novakdy@Dylans-MacBook-Pro ~ % ls\
+Applications			local_env.txt\
+Desktop				Movies\
+Documents			Music\
+Downloads			Pictures\
+Dylan Project			Public\
+Hello1				remote_env.txt\
+iCloud Drive (Archive) - 1	Rstudio Test\
+Library\
+(base) novakdy@Dylans-MacBook-Pro ~ % cd Desktop \
+(base) novakdy@Dylans-MacBook-Pro Desktop % cd UBC\
+(base) novakdy@Dylans-MacBook-Pro UBC % cd DATA_541\
+(base) novakdy@Dylans-MacBook-Pro DATA_541 % cd Lab_3\
+(base) novakdy@Dylans-MacBook-Pro Lab_3 % git clone https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy\
+Cloning into 'data-541-lab-3-novakdy'...\
+warning: You appear to have cloned an empty repository.\
+(base) novakdy@Dylans-MacBook-Pro Lab_3 % git checkout -b Markdown   \
+fatal: not a git repository (or any of the parent directories): .git\
+(base) novakdy@Dylans-MacBook-Pro Lab_3 % cd data-541-lab-3-novakdy\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git checkout -b Markdown \
+Switched to a new branch 'Markdown'\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git status\
+On branch Markdown\
+\
+No commits yet\
+\
+nothing to commit (create/copy files and use "git add" to track)\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git add . \
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git commit -m "First Commit" \
+[Markdown (root-commit) 848e2e5] First Commit\
+ 2 files changed, 51 insertions(+)\
+ create mode 100644 Lab3_q2.md\
+ create mode 100644 lab3_q1.md\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git push -u origin Markdown\
+To https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy\
+ \cf3 ! [rejected]       \cf2  Markdown -> Markdown (fetch first)\
+\cf3 error: failed to push some refs to 'https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy'\cf2 \
+\cf4 hint: Updates were rejected because the remote contains work that you do not\cf2 \
+\cf4 hint: have locally. This is usually caused by another repository pushing to\cf2 \
+\cf4 hint: the same ref. If you want to integrate the remote changes, use\cf2 \
+\cf4 hint: 'git pull' before pushing again.\cf2 \
+\cf4 hint: See the 'Note about fast-forwards' in 'git push --help' for details.\cf2 \
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git pull \
+remote: Enumerating objects: 3, done.\
+remote: Counting objects: 100% (3/3), done.\
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)\
+Unpacking objects: 100% (3/3), 862 bytes | 215.00 KiB/s, done.\
+From https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy\
+ * [new branch]      Markdown   -> origin/Markdown\
+ * [new branch]      main       -> origin/main\
+There is no tracking information for the current branch.\
+Please specify which branch you want to merge with.\
+See git-pull(1) for details.\
+\
+    git pull <remote> <branch>\
+\
+If you wish to set tracking information for this branch you can do so with:\
+\
+    git branch --set-upstream-to=origin/<branch> Markdown\
+\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git pull Markdown \
+fatal: 'Markdown' does not appear to be a git repository\
+fatal: Could not read from remote repository.\
+\
+Please make sure you have the correct access rights\
+and the repository exists.\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git pull https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy.git Markdown \
+From https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy\
+ * branch            Markdown   -> FETCH_HEAD\
+\cf4 hint: You have divergent branches and need to specify how to reconcile them.\cf2 \
+\cf4 hint: You can do so by running one of the following commands sometime before\cf2 \
+\cf4 hint: your next pull:\cf2 \
+\cf4 hint:\cf2 \
+\cf4 hint:   git config pull.rebase false  # merge\cf2 \
+\cf4 hint:   git config pull.rebase true   # rebase\cf2 \
+\cf4 hint:   git config pull.ff only       # fast-forward only\cf2 \
+\cf4 hint:\cf2 \
+\cf4 hint: You can replace "git config" with "git config --global" to set a default\cf2 \
+\cf4 hint: preference for all repositories. You can also pass --rebase, --no-rebase,\cf2 \
+\cf4 hint: or --ff-only on the command line to override the configured default per\cf2 \
+\cf4 hint: invocation.\cf2 \
+fatal: Need to specify how to reconcile divergent branches.\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git config pull.rebase false  # merge\
+error: no action specified\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git config pull.rebase false\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git pull \
+There is no tracking information for the current branch.\
+Please specify which branch you want to merge with.\
+See git-pull(1) for details.\
+\
+    git pull <remote> <branch>\
+\
+If you wish to set tracking information for this branch you can do so with:\
+\
+    git branch --set-upstream-to=origin/<branch> Markdown\
+\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git pull https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy.git Makrdown \
+fatal: couldn't find remote ref Makrdown\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git pull https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy.git Markdown\
+From https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy\
+ * branch            Markdown   -> FETCH_HEAD\
+fatal: refusing to merge unrelated histories\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git add . \
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git commit -m "First Commit" \
+[Markdown 0e695ff] First Commit\
+ 2 files changed, 1 insertion(+)\
+ create mode 100644 .DS_Store\
+ create mode 100644 readme.txt\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git push -u origin Markdown\
+To https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy\
+ \cf3 ! [rejected]       \cf2  Markdown -> Markdown (non-fast-forward)\
+\cf3 error: failed to push some refs to 'https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy'\cf2 \
+\cf4 hint: Updates were rejected because the tip of your current branch is behind\cf2 \
+\cf4 hint: its remote counterpart. If you want to integrate the remote changes,\cf2 \
+\cf4 hint: use 'git pull' before pushing again.\cf2 \
+\cf4 hint: See the 'Note about fast-forwards' in 'git push --help' for details.\cf2 \
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git pull \
+There is no tracking information for the current branch.\
+Please specify which branch you want to merge with.\
+See git-pull(1) for details.\
+\
+    git pull <remote> <branch>\
+\
+If you wish to set tracking information for this branch you can do so with:\
+\
+    git branch --set-upstream-to=origin/<branch> Markdown\
+\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git status \
+On branch Markdown\
+nothing to commit, working tree clean\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git push -f Markdown fatal: 'Markdown' does not appear to be a git repository\
+fatal: Could not read from remote repository.\
+\
+Please make sure you have the correct access rights\
+and the repository exists.\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git push -f https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy.git Markdown \
+Enumerating objects: 8, done.\
+Counting objects: 100% (8/8), done.\
+Delta compression using up to 11 threads\
+Compressing objects: 100% (7/7), done.\
+Writing objects: 100% (8/8), 1.98 KiB | 1.98 MiB/s, done.\
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)\
+To https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy.git\
+ + c9fbc79...0e695ff Markdown -> Markdown (forced update)\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git add. \
+git: 'add.' is not a git command. See 'git --help'.\
+\
+The most similar command is\
+	add\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git add . \
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git commit -m "First Commit"\
+On branch Markdown\
+nothing to commit, working tree clean\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git status \
+On branch Markdown\
+nothing to commit, working tree clean\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git checkout main \
+branch 'main' set up to track 'origin/main'.\
+Switched to a new branch 'main'\
+Your branch is up to date with 'origin/main'.\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git merge Markdown \
+fatal: refusing to merge unrelated histories\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git pull origin main --allow-unrelated-histories\
+From https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy\
+ * branch            main       -> FETCH_HEAD\
+Already up to date.\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git merge Markdow\
+merge: Markdow - not something we can merge\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git pull \
+From https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy\
+ + c9fbc79...0e695ff Markdown   -> origin/Markdown  (forced update)\
+Already up to date.\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git merge -u origin Markdown\
+error: unknown switch `u'\
+usage: git merge [<options>] [<commit>...]\
+   or: git merge --abort\
+   or: git merge --continue\
+\
+    -n                    do not show a diffstat at the end of the merge\
+    --[no-]stat           show a diffstat at the end of the merge\
+    --[no-]summary        (synonym to --stat)\
+    --[no-]log[=<n>]      add (at most <n>) entries from shortlog to merge commit message\
+    --[no-]squash         create a single commit instead of doing a merge\
+    --[no-]commit         perform a commit if the merge succeeds (default)\
+    -e, --[no-]edit       edit message before committing\
+    --[no-]cleanup <mode> how to strip spaces and #comments from message\
+    --[no-]ff             allow fast-forward (default)\
+    --ff-only             abort if fast-forward is not possible\
+    --[no-]rerere-autoupdate\
+                          update the index with reused conflict resolution if possible\
+    --[no-]verify-signatures\
+                          verify that the named commit has a valid GPG signature\
+    -s, --[no-]strategy <strategy>\
+                          merge strategy to use\
+    -X, --[no-]strategy-option <option=value>\
+                          option for selected merge strategy\
+    -m, --[no-]message <message>\
+                          merge commit message (for a non-fast-forward merge)\
+    -F, --file <path>     read message from file\
+    --[no-]into-name <name>\
+                          use <name> instead of the real target\
+    -v, --[no-]verbose    be more verbose\
+    -q, --[no-]quiet      be more quiet\
+    --[no-]abort          abort the current in-progress merge\
+    --[no-]quit           --abort but leave index and working tree alone\
+    --[no-]continue       continue the current in-progress merge\
+    --[no-]allow-unrelated-histories\
+                          allow merging unrelated histories\
+    --[no-]progress       force progress reporting\
+    -S, --[no-]gpg-sign[=<key-id>]\
+                          GPG sign commit\
+    --[no-]autostash      automatically stash/stash pop before and after\
+    --[no-]overwrite-ignore\
+                          update ignored files (default)\
+    --[no-]signoff        add a Signed-off-by trailer\
+    --no-verify           bypass pre-merge-commit and commit-msg hooks\
+    --verify              opposite of --no-verify\
+\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git merge Markdown\
+fatal: refusing to merge unrelated histories\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git merge Markdown --allow-unrelated-histories \
+hint: Waiting for your editor to close the file... \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+Last login: Tue Sep 30 17:19:38 on ttys002\
+(base) novakdy@Dylans-MacBook-Pro ~ % cd Desktop \
+(base) novakdy@Dylans-MacBook-Pro Desktop % cd UBC\
+(base) novakdy@Dylans-MacBook-Pro UBC % cd DATA_541\
+(base) novakdy@Dylans-MacBook-Pro DATA_541 % cd Lab_3\
+(base) novakdy@Dylans-MacBook-Pro Lab_3 % cd data-541-lab-3-novakdy\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git commit -m first commit \
+fatal: cannot do a partial commit during a merge.\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git commit -m "first commit"\
+[main 5123d7a] first commit\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git merge Markdown --allow-unrelated-histories\
+Already up to date.\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git merge Markdown\
+Already up to date.\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git push\
+Enumerating objects: 4, done.\
+Counting objects: 100% (4/4), done.\
+Delta compression using up to 11 threads\
+Compressing objects: 100% (2/2), done.\
+Writing objects: 100% (2/2), 267 bytes | 267.00 KiB/s, done.\
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/ubco-mds-2025-labs/data-541-lab-3-novakdy\
+   c9fbc79..5123d7a  main -> main\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git branch -d Markdown\
+Deleted branch Markdown (was 0e695ff).\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % git push\
+Everything up-to-date\
+(base) novakdy@Dylans-MacBook-Pro data-541-lab-3-novakdy % \
+}
